@@ -1,43 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html lang="pt-br">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<head>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <title>Pré-venda iPhone 16 Apple | KaBuM!</title>
+  <meta name="description"
+    content="Explore as novas possibilidades com o iPhone 16. Vem pra pré-venda exclusiva no KaBuM! e aproveite essa novidade. Faça seu Cadastro!">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pré-venda iPhone 16 Apple | KaBuM!">
+  <meta property="og:description"
+    content="Explore as novas possibilidades com o iPhone 16. Vem pra pré-venda exclusiva no KaBuM! e aproveite essa novidade. Faça seu Cadastro!">
+  <meta property="og:image" content="https://www.kabum.com.br/hotsite/iphone16/img/og.jpg">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.21.11/dist/css/uikit.min.css" />
+  <link href="css/reset-min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div><img src="img/kabum-logo.png" alt="Logo KaBuM!" /></div>
+      <img id="iphone" src="img/iphone-16.png" alt="iPhone 16" />
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Garanta o seu na <strong>pré-venda</strong> do KaBuM!</h1>
+      <div class="data">
+        <p>Disponível em <strong>24/09</strong></p>
+      </div>
+    </div>
+  </main>
+
+  <section id="cadastro">
+    <div class="container gap">
+
+      <div id="infos">
+
+      <h2>Reserve agora!</h2>
+      <p>Seu <strong>Iphone 16 256GB</strong></p>
+
+      <form action="https://cloud.e.kabum.com.br/prevendaiphone16" name="subscribeForm" method="post">
+
+        <div>
+
+          <div class="content__data__form__side">
+            <label for="nome">Nome completo</label>
+            <input type="text" name="nome" id="nome" required="required" class="input_name"
+              placeholder="Por favor insira o seu nome">
+          </div>
+          <div class="content__data__form__side">
+            <label for="email">E-mail</label>
+            <input autocomplete="email" type="email" name="email" id="email" required="required"
+              placeholder="Seu e-mail">
+          </div>
+
+        </div>
+
+        <div>
+          <div class="content__data__form__side">
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" required="required" class="input_name"
+              placeholder="Número de telefone">
+          </div>
+
+          <div class="content__data__form__side">
+            <label for="aniversario">Data de Nascimento</label>
+            <div class="flex datas">
+              <select required id="dia" placeholder="Dia">
+                <option value="" disabled selected>Dia</option>
+              </select>
+              <select required id="mes" placeholder="Mês">
+                <option value="" disabled selected>Mês</option>
+              </select>
+              <select required id="ano" placeholder="Ano">
+                <option value="" disabled selected>Ano</option>
+              </select>
+
+              <input type="text" id="aniversario" name="Nascimento" placeholder="Aniversário (mm/dd/aaaa)">
+            </div>
+          </div>
+
+        </div>
+
+        <p class="legal">Reserve agora seu <strong>iPhone 16 256GB</strong>, o valor da RESERVA é de R$200,00. No dia 24/09 será liberado
+          para realizar a escolha da cor e pagamento do valor restante de <strong>R$4.856,00 em até 48x sem juros.</strong>  Somente aqui na <strong>KaBuM!</strong>  </a>
+        </p>
+
+        <div class="boxcheckbox">
+
+          
+          <input type="checkbox" id="aceitar" name="aceitar" required>
+          <label class="checkbox" for="aceitar">
+            Declaro que li e concordo com os termos.
+          </label>
+        </div>
+
+        <div class="recp_btn">
+
+          <section class="btn__section">
+            <input type="submit" value="Reservar agora" class="cta" onclick="window.location.href='https://checkout.sypag.com/d08c8c-3/checkout/tk1SCdd4OeQDtSO';">
+
+          </section>
+        </div>
+      </form>
+
+    </div>
+
+    <div id="mao">
+      <img src="img/iphone-mao.png" alt="iPhone 16" />
+    </div>
+
+
+    </div>
+  </section>
+
+
+  <h4>Escolha a cor no dia <strong>24/09</strong></h4>
+  <h5>Fique de olho nos e-mails <strong>KaBuM!</strong></h5>
+
+  <img src="img/cores5.png" alt="iPhone16">
+
+
+
+
+
+
+
+    <footer>
+
+      <div id="footer-social">
+        <div class="container flex">
+
+
+
+
+          <ul class="social">
+            <li uk-scrollspy="cls:uk-animation-slide-bottom-small; repeat:true; delay: 200"><a
+                href="http://www.facebook.com/kabumcombr" target="_blank" class="clickable-datalayer"
+                data-clickable-name="http://www.facebook.com/kabumcombr" data-event="cta-facebook"><span
+                  uk-icon="icon: facebook; ratio: 0.8"></span></a></li>
+            <li uk-scrollspy="cls:uk-animation-slide-bottom-small; repeat:true; delay: 300"><a
+                href="https://bsky.app/profile/kabumcombr.bsky.social" target="_blank" class="clickable-datalayer"
+                data-clickable-name="https://bsky.app/profile/kabumcombr.bsky.social" data-event="cta-bluesky"><span
+                  uk-icon="icon: bluesky; ratio: 0.8"></span></a></li>
+            <li uk-scrollspy="cls:uk-animation-slide-bottom-small; repeat:true; delay: 400"><a
+                href="http://www.instagram.com/kabum" target="_blank" class="clickable-datalayer"
+                data-clickable-name="http://www.instagram.com/kabum" data-event="cta-instagram"><span
+                  uk-icon="icon: instagram; ratio: 0.8"></span></a></li>
+            <li uk-scrollspy="cls:uk-animation-slide-bottom-small; repeat:true; delay: 500"><a
+                href="http://www.youtube.com/@kabum" target="_blank" class="clickable-datalayer"
+                data-clickable-name="http://www.youtube.com/@kabum" data-event="cta-youtube"><span
+                  uk-icon="icon: youtube; ratio: 0.8"></span></a></li>
+            <li uk-scrollspy="cls:uk-animation-slide-bottom-small; repeat:true; delay: 600"><a
+                href="https://www.tiktok.com/@kabum" target="_blank" class="clickable-datalayer"
+                data-clickable-name="https://www.tiktok.com/@kabum" data-event="cta-tiktok"><span
+                  uk-icon="icon: tiktok; ratio: 0.8"></span></a></li>
+          </ul>
+
+
+        </div>
+      </div>
+
+
+      <p>© 2024Apple Inc. Todos os direitos reservados. Apple Computer Brasil Ltda. CNPJ: 00.623.904/0003-35. Saiba mais em: <a href="https://www.apple.com/br/iphone/" target="_blank">apple.com/br/iphone</a><strong></strong>. Imagens ilustrativas.</p>
+
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.21.11/dist/js/uikit-icons.min.js"></script>
+    <script type="text/javascript">const utmMedium = "INSTAGRAM";</script>
+    <script src="js/script.js"></script>
+
+</body>
+
 </html>
